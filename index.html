@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fish Design Portfolio</title>
+    <link rel="stylesheet" href="Styles/styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <h1>Fish Design</h1>
+        <ul>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Creative Designer Specializing in Graphic and Web Design</h2>
+        <button onclick="scrollToProjects()">Explore Projects</button>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>My Passion for Auto-Moto</h2>
+        <div class="project-gallery">
+            <div class="project" data-id="project1">
+                <img src="Images/Golf GTI TC.png" alt="Golf GTI TCR">
+                <h3>Golf GTI TCR</h3>
+                <p>Speed and performance master, on road and track.</p>
+            </div>
+            <div class="project" data-id="project2">
+                <img src="Images/Golf.png" alt="Volkswagen Golf MK2">
+                <h3>Volkswagen Golf MK2</h3>
+                <p>A timeless classic merging vintage style with modern flair.</p>
+            </div>
+            <div class="project" data-id="project3">
+                <img src="Images/Jeep.png" alt="Jeep Wrangler">
+                <h3>Jeep Wrangler</h3>
+                <p>Ready to take you anywhere, from urban roads to off-road adventures.</p>
+            </div>
+            <div class="project" data-id="project4">
+                <img src="Images/Lamborghini.png" alt="Lamborghini Aventador">
+                <h3>Lamborghini Aventador</h3>
+                <p>A dream car that captures attention with its power and speed.</p>
+            </div>
+            <div class="project" data-id="project5">
+                <img src="Images/Retro.png" alt="Retro Cars">
+                <h3>Retro Cars</h3>
+                <p>Experience vintage elegance with a true gem on wheels.</p>
+            </div>
+            <div class="project" data-id="project6">
+                <img src="Images/Royal Enfield.png" alt="Royal Enfield">
+                <h3>Royal Enfield</h3>
+                <p>A perfect fusion of retro style and modern performance.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Project Details -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modalImage" src="" alt="Project Image">
+            <h3 id="modalTitle"></h3>
+            <p id="modalDescription"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
